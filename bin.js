@@ -58,6 +58,7 @@ program
 program
   .command('lint')
   .description('run codice linter')
+  .option('-f, --fix', 'fix errors that are found')
   .action(wrap('./lib/lint'))
 
 program
