@@ -1,5 +1,5 @@
 {
-  "name": "ace",
+  "name": "@connexta/ace",
   "version": "1.0.0",
   "description": "A node cli for interoperating with the maven eco-system.",
   "main": "index.js",
