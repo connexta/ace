@@ -8,7 +8,7 @@
     "ace": "bin.js"
   },
   "dependencies": {
-    "@connexta/eslint-plugin": "git://github.com/connexta/eslint-plugin.git#v0.0.1",
+    "@connexta/eslint-plugin-connexta": "git://github.com/connexta/eslint-plugin-connexta.git#v0.0.2",
     "@ljharb/eslint-config": "12.2.1",
     "ansi-colors": "3.0.5",
     "archiver": "2.1.1",
