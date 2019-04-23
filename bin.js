@@ -61,6 +61,7 @@ program
   .description('run formatter')
   .option('-m, --modified', 'only run against modified code')
   .option('-w, --write', 'fix errors that are found')
+  .option('-l, --license <path-to-license-file>', 'path to license file')
   .action(wrap('./lib/format'))
 
 program
