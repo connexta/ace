@@ -7,6 +7,10 @@
   "bin": {
     "ace": "bin.js"
   },
+  "scripts": {
+    "fmt": "./bin.js format -w",
+    "test": "./bin.js format"
+  },
   "dependencies": {
     "@connexta/eslint-plugin-connexta": "git://github.com/connexta/eslint-plugin-connexta.git#v0.0.2",
     "@ljharb/eslint-config": "12.2.1",
