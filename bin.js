@@ -9,19 +9,14 @@ const cheerio = require('cheerio')
 const wrap = path => (args = {}) => {
   const cmd = require(path)
 
-  let pkg, pom
+  const getPackage = () => require(find.sync('package.json'))
+  const getPom = () =>
+    cheerio.load(fs.readFileSync(find.sync('pom.xml'), { encoding: 'utf8' }), {
+      xmlMode: true,
+      decodeEntities: false,
+    })
 
-  try {
-    pkg = require(find.sync('package.json'))
-    pom = cheerio.load(
-      fs.readFileSync(find.sync('pom.xml'), { encoding: 'utf8' }),
-      { xmlMode: true, decodeEntities: false }
-    )
-  } catch (e) {
-    console.error(e)
-  }
-
-  cmd({ args, pkg, pom })
+  cmd({ args, getPackage, getPom })
 }
 
 const pkg = require('./package.json')
