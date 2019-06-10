@@ -15,7 +15,7 @@ For the most part, ace acts as a wrapper to widely used frontend tooling.
 
 Those technologies include:
 
-- [webapack](https://webpack.js.org/)
+- [webpack](https://webpack.js.org/)
 - [react-hot-loader](http://gaearon.github.io/react-hot-loader/)
 - [babel](https://babeljs.io/)
 - [typescript](https://www.typescriptlang.org/)
