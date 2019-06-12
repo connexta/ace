@@ -35,7 +35,7 @@ program
   .action(wrap('./lib/set-env'))
 
 program
-  .command('install [jar]')
+  .command('install')
   .description('install a jar into ~/.m2')
   .action(wrap('./lib/install'))
 
@@ -46,7 +46,7 @@ program
   .action(wrap('./lib/clean'))
 
 program
-  .command('test [html]')
+  .command('test')
   .description('run mocha tests in a headless browser')
   .action(wrap('./lib/test'))
 
