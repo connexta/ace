@@ -111,6 +111,7 @@ program
   )
   .option('--port <port>', 'ddf server port (default: 8993)')
   .option('--host <host>', 'ddf server host (default: localhost)')
+  .option('--whitelist <context-path>', 'adds a context path to the whitelist')
   .action(wrap('./lib/disable-idp'))
 
 program.parse(process.argv)
