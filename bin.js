@@ -48,6 +48,17 @@ program
 program
   .command('test')
   .description('run mocha tests in a headless browser')
+  .option(
+    '--url <location>',
+    'location to find tests (default: ./target/test/index.html)'
+  )
+  .option('-w, --width <number>', 'browser window width (default: 1280)')
+  .option('-h, --height <number>', 'browser window height (default: 800)')
+  .option('-v, --visible', 'browser visibility (default: false)')
+  .option(
+    '-t, --timeout <number>',
+    'test timeout in seconds (default: 900 seconds)'
+  )
   .action(wrap('./lib/test'))
 
 program
