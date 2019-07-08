@@ -83,7 +83,7 @@ Example:
 describe('a group of tests', () => {
   it('should pass', () => {
   })
-  it('should pass callback' (done) => {
+  it('should pass callback', (done) => {
     setTimeout(done, 1000)
   })
   it('should pass promise', () => {
@@ -95,7 +95,7 @@ describe('a group of tests', () => {
   it('should fail callback', (done) => {
     done(new Error('fail'))
   })
-  it('should fail promise', (done) => {
+  it('should fail promise', () => {
     return Promise.reject(new Error('fail'))
   })
 })
