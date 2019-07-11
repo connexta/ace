@@ -122,6 +122,14 @@ program
   .action(wrap('./lib/start'))
 
 program
+  .command('storybook')
+  .description('start the storybook server')
+  .option('--port <port>', 'dev server port (default: 8080)')
+  .option('--host <host>', 'dev server host (default: localhost)')
+  .option('--static', 'Build static version of storybook.')
+  .action(wrap('./lib/storybook'))
+
+program
   .command('disable-idp')
   .description('disable idp authentication in running ddf instance')
   .option(
