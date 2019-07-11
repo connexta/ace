@@ -23,6 +23,7 @@ Those technologies include:
 - [mocha](https://mochajs.org/)
 - [istanbul](https://istanbul.js.org/)
 - [prettier](https://prettier.io/)
+- [storybook](https://storybook.js.org/)
 
 ## Help
 
@@ -65,7 +66,19 @@ To start a test server, do:
 
 For help on more options, do:
 
-    ace start --help 
+    ace start --help
+
+## Storybook
+
+To start an isolated development environment, do:
+
+    ace storybook
+
+This will start a storybook dev server which will reload on file changes.
+
+To build a static version of storybook, do:
+
+    ace storybook --static
 
 ## Testing
 
