@@ -93,7 +93,10 @@ program
 program
   .command('bundle')
   .description('bundle webapp')
-  .option('--tsTranspileOnly', 'only transpile typescript (default is false)')
+  .option(
+    '--tsTranspileOnly <tsTranspileOnly>',
+    'only transpile typescript (default is false)'
+  )
   .option('-e, --env <env>', 'build environment <development|test|production>')
   .action(wrap('./lib/bundle'))
 
@@ -101,7 +104,10 @@ program
   .command('start')
   .description('start the dev server')
   .option('-N, --no-open', 'do not open default browser')
-  .option('--tsTranspileOnly', 'only transpile typescript (default is false)')
+  .option(
+    '--tsTranspileOnly <tsTranspileOnly>',
+    'only transpile typescript (default is false)'
+  )
   .option(
     '-a, --auth <auth>',
     'auth <username:password> (default: admin:admin)'
