@@ -1,7 +1,8 @@
 {
   "traversalDepth": ["20"],
-  "realms": ["/=karaf"],
-  "authenticationTypes": ["/=IDP|GUEST", "/solr=SAML|PKI|BASIC"],
+  "guestAccess": ["true"],
+  "sessionAccess": ["true"],
+  "authenticationTypes": ["/=SAML", "/admin=SAML|BASIC"],
   "requiredAttributes": [
     "/=",
     "/admin={http://schemas.xmlsoap.org/ws/2005/05/identity/claims/role=system-admin}",
