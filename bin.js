@@ -127,6 +127,7 @@ program
   .option('--port <port>', 'dev server port (default: 8080)')
   .option('--host <host>', 'dev server host (default: localhost)')
   .option('--static', 'Build static version of storybook.')
+  .option('--root <path>', 'Root directory to search for stories.')
   .action(wrap('./lib/storybook'))
 
 program
