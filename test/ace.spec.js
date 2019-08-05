@@ -136,6 +136,7 @@ describe('ace with async failures', () => {
   it('ace bundle --env=test', async () => {
     equal(await ace('bundle', '--env', 'test'), 0)
   }).timeout(60000)
+  // is this flaky?
   it('ace test', async () => {
     equal(await ace('test', 'target/test/index.html'), 1)
   })
