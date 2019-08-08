@@ -19,6 +19,7 @@
   "dependencies": {
     "@babel/core": "^7.0.0",
     "@connexta/eslint-plugin-connexta": "git://github.com/connexta/eslint-plugin-connexta.git#v0.0.2",
+    "@hot-loader/react-dom": "16.8.6",
     "@storybook/addon-actions": "5.1.9",
     "@storybook/addon-info": "5.1.9",
     "@storybook/addon-knobs": "5.1.9",
