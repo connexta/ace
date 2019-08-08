@@ -73,7 +73,7 @@
     "raw-loader": "0.5.1",
     "react-dev-utils": "5.0.2",
     "react-docgen-typescript-loader": "^3.1.0",
-    "react-hot-loader": "4.12.6",
+    "react-hot-loader": "4.12.10",
     "rimraf": "2.6.2",
     "script-loader": "0.7.2",
     "simple-progress-webpack-plugin": "1.1.2",
