@@ -19,6 +19,7 @@
   "dependencies": {
     "@babel/core": "^7.0.0",
     "@connexta/eslint-plugin-connexta": "git://github.com/connexta/eslint-plugin-connexta.git#v0.0.2",
+    "@hot-loader/react-dom": "16.8.6",
     "@storybook/addon-actions": "5.1.9",
     "@storybook/addon-info": "5.1.9",
     "@storybook/addon-knobs": "5.1.9",
@@ -73,7 +74,7 @@
     "raw-loader": "0.5.1",
     "react-dev-utils": "5.0.2",
     "react-docgen-typescript-loader": "^3.1.0",
-    "react-hot-loader": "4.12.6",
+    "react-hot-loader": "4.12.10",
     "rimraf": "2.6.2",
     "script-loader": "0.7.2",
     "simple-progress-webpack-plugin": "1.1.2",
