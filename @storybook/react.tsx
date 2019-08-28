@@ -1,5 +1,6 @@
-import { storiesOf as of } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
+import { storiesOf as of } from '@storybook/react'
+import * as React from 'react'
 
 export const storiesOf = (name: string, m: NodeModule) => {
   const stories = of(name, m)
