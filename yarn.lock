@@ -1037,12 +1037,6 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@connexta/eslint-plugin-connexta@git://github.com/connexta/eslint-plugin-connexta.git#v0.0.2":
-  version "0.0.0"
-  resolved "git://github.com/connexta/eslint-plugin-connexta.git#5ced79272cacd20f95b5217f19c36b7edfc337ec"
-  dependencies:
-    requireindex "1.1.0"
-
 "@emotion/babel-utils@^0.6.4":
   version "0.6.10"
   resolved "https://registry.yarnpkg.com/@emotion/babel-utils/-/babel-utils-0.6.10.tgz#83dbf3dfa933fae9fc566e54fbb45f14674c6ccc"
@@ -11195,11 +11189,6 @@ require-uncached@^1.0.3:
   dependencies:
     caller-path "^0.1.0"
     resolve-from "^1.0.0"
-
-requireindex@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/requireindex/-/requireindex-1.1.0.tgz#e5404b81557ef75db6e49c5a72004893fe03e162"
-  integrity sha1-5UBLgVV+91225JxacgBIk/4D4WI=
 
 requires-port@^1.0.0:
   version "1.0.0"
