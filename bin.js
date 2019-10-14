@@ -117,6 +117,8 @@ program
     '--proxy <target>',
     'set proxy target (default: https://localhost:8993)'
   )
+  .option('--main <script>', 'the javascript entry file')
+  .option('--contextPath <path>', 'context path to start server on')
   .option('--port <port>', 'dev server port (default: 8080)')
   .option('--host <host>', 'dev server host (default: localhost)')
   .action(wrap('./lib/start'))
