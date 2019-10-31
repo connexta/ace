@@ -94,7 +94,7 @@ describe('ace', () => {
   }).timeout(60000)
   it('ace test', async () => {
     equal(await ace('test', 'target/test/index.html'), 0)
-  })
+  }).timeout(60000)
   it('should tear down', async () => {
     await rimraf(root)
   })
