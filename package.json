@@ -22,8 +22,6 @@
     "@storybook/addon-info": "5.2.3",
     "@storybook/addon-knobs": "5.2.3",
     "@storybook/react": "5.2.3",
-    "@types/storybook__addon-info": "^4.1.2",
-    "@types/storybook__react": "^4.0.2",
     "ansi-colors": "3.0.5",
     "archiver": "2.1.1",
     "babel-core": "6.26.0",
@@ -93,8 +91,10 @@
     "worker-loader": "1.1.1"
   },
   "devDependencies": {
+    "@types/storybook__addon-info": "^4.1.2",
+    "@types/storybook__react": "^4.0.2",
     "@types/webpack-env": "1.13.6",
-    "react": "^15.1.0 || ^16.0.0",
-    "react-dom": "^15.1.0 || ^16.0.0"
+    "react-dom": "^15.1.0 || ^16.0.0",
+    "react": "^15.1.0 || ^16.0.0"
   }
 }
