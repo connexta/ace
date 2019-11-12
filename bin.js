@@ -94,6 +94,10 @@ program
   .command('bundle')
   .description('bundle webapp')
   .option(
+    '--middleware <file>',
+    'add express middleware before webpack dev server'
+  )
+  .option(
     '--tsTranspileOnly <tsTranspileOnly>',
     'only transpile typescript (default is false)'
   )
@@ -121,6 +125,10 @@ program
   .option('--contextPath <path>', 'context path to start server on')
   .option('--port <port>', 'dev server port (default: 8080)')
   .option('--host <host>', 'dev server host (default: localhost)')
+  .option(
+    '--middleware <file>',
+    'add express middleware before webpack dev server'
+  )
   .action(wrap('./lib/start'))
 
 program
