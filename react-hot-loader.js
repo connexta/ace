@@ -1,1 +1,1 @@
-export * from 'react-hot-loader'
+module.exports = require('react-hot-loader')
