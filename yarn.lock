@@ -10777,9 +10777,9 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-"react-loadable@https://github.com/connexta/react-loadable#0722387d6a5383f1f0011bd50181d2a724b37798":
+"react-loadable@https://github.com/connexta/react-loadable#f50b8b64b12649c737d2f1f7e1ef34ec348427d9":
   version "5.5.0"
-  resolved "https://github.com/connexta/react-loadable#0722387d6a5383f1f0011bd50181d2a724b37798"
+  resolved "https://github.com/connexta/react-loadable#f50b8b64b12649c737d2f1f7e1ef34ec348427d9"
   dependencies:
     prop-types "^15.5.0"
 

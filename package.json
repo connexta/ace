@@ -70,7 +70,7 @@
     "react-dev-utils": "5.0.2",
     "react-docgen-typescript-loader": "^3.1.0",
     "react-hot-loader": "4.12.6",
-    "react-loadable": "https://github.com/connexta/react-loadable#0722387d6a5383f1f0011bd50181d2a724b37798",
+    "react-loadable": "https://github.com/connexta/react-loadable#f50b8b64b12649c737d2f1f7e1ef34ec348427d9",
     "require-from-string": "^2.0.2",
     "rimraf": "2.6.2",
     "script-loader": "0.7.2",
