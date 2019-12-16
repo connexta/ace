@@ -71,6 +71,7 @@
     "react-docgen-typescript-loader": "^3.1.0",
     "react-hot-loader": "4.12.6",
     "react-loadable": "https://github.com/connexta/react-loadable#f50b8b64b12649c737d2f1f7e1ef34ec348427d9",
+    "react-loadable-ssr-addon": "^0.2.0",
     "require-from-string": "^2.0.2",
     "rimraf": "2.6.2",
     "script-loader": "0.7.2",
@@ -99,7 +100,7 @@
     "@types/storybook__addon-info": "^4.1.2",
     "@types/storybook__react": "^4.0.2",
     "@types/webpack-env": "1.13.6",
-    "react-dom": "^15.1.0 || ^16.0.0",
-    "react": "^15.1.0 || ^16.0.0"
+    "react": "^15.1.0 || ^16.0.0",
+    "react-dom": "^15.1.0 || ^16.0.0"
   }
 }
