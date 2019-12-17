@@ -70,7 +70,7 @@
     "react-dev-utils": "5.0.2",
     "react-docgen-typescript-loader": "^3.1.0",
     "react-hot-loader": "4.12.6",
-    "react-loadable-ssr-addon": "https://github.com/schachte/react-loadable-ssr-addon#a88593a342fda85a79bf0dfc9f800fdff0693719",
+    "react-loadable-ssr-addon": "https://github.com/schachte/react-loadable-ssr-addon#a2d717015c302b37841850587b5c46a3f60677e5",
     "require-from-string": "^2.0.2",
     "rimraf": "2.6.2",
     "script-loader": "0.7.2",
