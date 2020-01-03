@@ -10777,9 +10777,9 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-"react-loadable-ssr-addon@https://github.com/connexta/react-loadable-ssr-addon#8c8d2e52884250c0e82ebcb64d6a64544b393fae":
+"react-loadable-ssr-addon@https://github.com/connexta/react-loadable-ssr-addon#0f42dcfeeac60770827f24e546b0f4fa64b4c74e":
   version "0.2.0"
-  resolved "https://github.com/connexta/react-loadable-ssr-addon#8c8d2e52884250c0e82ebcb64d6a64544b393fae"
+  resolved "https://github.com/connexta/react-loadable-ssr-addon#0f42dcfeeac60770827f24e546b0f4fa64b4c74e"
 
 react-loadable@^5.5.0:
   version "5.5.0"
