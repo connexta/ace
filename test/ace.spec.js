@@ -32,7 +32,7 @@ const generateProject = opts => {
           name: 'example-project',
           license: 'MIT',
           main: 'src/main/webapp/index.js',
-          'context-path': './',
+          publicPath: './',
         },
         null,
         2
