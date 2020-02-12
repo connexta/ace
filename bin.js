@@ -84,7 +84,11 @@ program
 program
   .command('gen-feature')
   .description('generate a feature file')
-  .option('-e, --extend <feature-file>', 'extend an existing feature file')
+  .option(
+    '-e, --extend [<feature-file>]',
+    'extend an existing feature file',
+    val => val.split(',')
+  )
   .option('-x, --exclude [projects]', 'exclude existing wabs', val =>
     val.split(',')
   )
