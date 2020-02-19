@@ -156,4 +156,14 @@ program
   .option('--whitelist <context-path>', 'adds a context path to the whitelist')
   .action(wrap('./lib/disable-idp'))
 
+program
+  .command('bundle:library')
+  .description('package code into a format ready for npm publish')
+  .option(
+    '--tsTranspileOnly <tsTranspileOnly>',
+    'only transpile typescript (default is false)'
+  )
+  .option('-e, --env <env>', 'build environment <development|test|production>')
+  .action(wrap('./lib/bundle-library'))
+
 program.parse(process.argv)
