@@ -1,3 +1,4 @@
+//@ts-ignore
 import { withInfo } from '@storybook/addon-info'
 import { storiesOf as of } from '@storybook/react'
 import * as React from 'react'
