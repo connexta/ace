@@ -1,3 +1,4 @@
+//@ts-ignore Remove once addon-info or addon-docs is migrated to typescript https://github.com/storybookjs/storybook/issues/5030
 import { withInfo } from '@storybook/addon-info'
 import { storiesOf as of } from '@storybook/react'
 import * as React from 'react'
