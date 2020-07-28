@@ -11,10 +11,15 @@ const wrap = path => (args = {}) => {
 
   const getPackage = () => require(find.sync('package.json'))
   const getPom = () =>
-    cheerio.load(fs.readFileSync(find.sync('pom.xml'), { encoding: 'utf8' }), {
-      xmlMode: true,
-      decodeEntities: false,
-    })
+    cheerio.load(
+      fs.readFileSync(find.sync(['.flattened-pom.xml', 'pom.xml']), {
+        encoding: 'utf8',
+      }),
+      {
+        xmlMode: true,
+        decodeEntities: false,
+      }
+    )
 
   cmd({ args, getPackage, getPom })
 }
