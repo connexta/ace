@@ -6,7 +6,7 @@ const program = require('commander')
 const find = require('find-up')
 const cheerio = require('cheerio')
 
-const wrap = path => (args = {}) => {
+const wrap = (path) => (args = {}) => {
   const cmd = require(path)
 
   const getPackage = () => require(find.sync('package.json'))
@@ -92,9 +92,9 @@ program
   .option(
     '-e, --extend [<feature-file>]',
     'extend an existing feature file',
-    val => val.split(',')
+    (val) => val.split(',')
   )
-  .option('-x, --exclude [projects]', 'exclude existing wabs', val =>
+  .option('-x, --exclude [projects]', 'exclude existing wabs', (val) =>
     val.split(',')
   )
   .action(wrap('./lib/gen-feature'))
