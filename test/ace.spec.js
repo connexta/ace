@@ -10,21 +10,21 @@ const writeFile = promisify(fs.writeFile)
 const rimraf = promisify(require('rimraf'))
 const mkdirp = promisify(require('mkdirp'))
 
-const isFile = path =>
-  new Promise(resolve => {
+const isFile = (path) =>
+  new Promise((resolve) => {
     fs.stat(path, (err, stat) => {
       resolve(err === null && stat.isFile())
     })
   })
 
-const isDirectory = path =>
-  new Promise(resolve => {
+const isDirectory = (path) =>
+  new Promise((resolve) => {
     fs.stat(path, (err, stat) => {
       resolve(err === null && stat.isDirectory())
     })
   })
 
-const generateProject = opts => {
+const generateProject = (opts) => {
   return Object.assign(
     {
       'package.json': JSON.stringify(
@@ -48,7 +48,7 @@ const generateProject = opts => {
 
 const writeProject = (root, project) => {
   return Promise.all(
-    Object.keys(project).map(async filePath => {
+    Object.keys(project).map(async (filePath) => {
       const absolutePath = path.resolve(root, filePath)
       await mkdirp(path.dirname(absolutePath))
       await writeFile(absolutePath, project[filePath])
@@ -61,7 +61,7 @@ const resolve = (...args) => {
 }
 
 const ace = (...args) =>
-  new Promise(done => {
+  new Promise((done) => {
     const cwd = resolve()
     const stdio = 'ignore'
     //const stdio = 'inherit' // Uncomment to debug ace output
