@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.0.0",
-    "@connexta/eslint-plugin-connexta": "git://github.com/connexta/eslint-plugin-connexta.git#v0.0.2",
+    "@connexta/eslint-plugin-connexta": "git+https://github.com/connexta/eslint-plugin-connexta.git#v0.0.2",
     "@storybook/addon-actions": "5.1.9",
     "@storybook/addon-info": "5.1.9",
     "@storybook/addon-knobs": "5.1.9",

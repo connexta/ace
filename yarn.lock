@@ -1037,9 +1037,9 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@connexta/eslint-plugin-connexta@git://github.com/connexta/eslint-plugin-connexta.git#v0.0.2":
+"@connexta/eslint-plugin-connexta@git+https://github.com/connexta/eslint-plugin-connexta.git#v0.0.2":
   version "0.0.0"
-  resolved "git://github.com/connexta/eslint-plugin-connexta.git#5ced79272cacd20f95b5217f19c36b7edfc337ec"
+  resolved "git+https://github.com/connexta/eslint-plugin-connexta.git#5ced79272cacd20f95b5217f19c36b7edfc337ec"
   dependencies:
     requireindex "1.1.0"
 
