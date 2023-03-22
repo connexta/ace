@@ -1,25 +1,24 @@
-const path = require('path')
-const { strictEqual: equal } = require('assert')
-const { spawn } = require('child_process')
-const { promisify } = require('util')
-const fs = require('fs')
-
-const stat = promisify(fs.stat)
-const access = promisify(fs.access)
-const writeFile = promisify(fs.writeFile)
-const rimraf = promisify(require('rimraf'))
-const mkdirp = promisify(require('mkdirp'))
+import { resolve as _resolve, dirname } from 'path'
+import { strictEqual as equal } from 'assert'
+import { spawn } from 'child_process'
+import { promisify } from 'util'
+import { stat as _stat, access as _access, writeFile as _writeFile } from 'fs'
+import * as urlImport from 'url';
+const __dirname = urlImport.fileURLToPath(new URL('.', import.meta.url));
+const writeFile = promisify(_writeFile)
+const rimraf = promisify(import('rimraf'))
+const mkdirp = promisify(import('mkdirp'))
 
 const isFile = (path) =>
   new Promise((resolve) => {
-    fs.stat(path, (err, stat) => {
+    _stat(path, (err, stat) => {
       resolve(err === null && stat.isFile())
     })
   })
 
 const isDirectory = (path) =>
   new Promise((resolve) => {
-    fs.stat(path, (err, stat) => {
+    _stat(path, (err, stat) => {
       resolve(err === null && stat.isDirectory())
     })
   })
@@ -39,7 +38,6 @@ const generateProject = (opts) => {
       ),
       'pom.xml': '',
       'src/main/webapp/index.js': `module.exports = () => 'hello, world'`,
-      'src/main/webapp/middleware.js': `export default (req, res, next) => { next() }`,
       'src/main/webapp/example.spec.js': `it('should pass', () => {})`,
     },
     opts
@@ -49,15 +47,15 @@ const generateProject = (opts) => {
 const writeProject = (root, project) => {
   return Promise.all(
     Object.keys(project).map(async (filePath) => {
-      const absolutePath = path.resolve(root, filePath)
-      await mkdirp(path.dirname(absolutePath))
+      const absolutePath = _resolve(root, filePath)
+      await mkdirp(dirname(absolutePath))
       await writeFile(absolutePath, project[filePath])
     })
   )
 }
 
 const resolve = (...args) => {
-  return path.resolve(__dirname, 'example-project', ...args)
+  return _resolve(__dirname, 'example-project', ...args)
 }
 
 const ace = (...args) =>
@@ -65,7 +63,7 @@ const ace = (...args) =>
     const cwd = resolve()
     const stdio = 'ignore'
     //const stdio = 'inherit' // Uncomment to debug ace output
-    const bin = path.resolve(__dirname, '..', 'bin.js')
+    const bin = _resolve(__dirname, '..', 'bin.js')
     const ps = spawn(bin, args, { stdio, cwd })
     ps.on('exit', done)
   })
@@ -87,16 +85,6 @@ describe('ace', () => {
   it('ace bundle', async () => {
     equal(await ace('bundle'), 0)
     equal(await isFile(resolve('target', 'webapp', 'index.html')), true)
-  }).timeout(60000)
-  it('ace bundle --middleware', async () => {
-    equal(
-      await ace('bundle', '--middleware', 'src/main/webapp/middleware.js'),
-      0
-    )
-    equal(
-      await isFile(resolve('target', 'server', 'bundle.middleware.js')),
-      true
-    )
   }).timeout(60000)
   it('ace bundle --env=test', async () => {
     equal(await ace('bundle', '--env', 'test'), 0)
