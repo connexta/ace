@@ -1,0 +1,6 @@
+{
+  "name": "example-project",
+  "license": "MIT",
+  "main": "src/main/webapp/index.js",
+  "context-path": "./"
+}

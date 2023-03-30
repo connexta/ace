@@ -63,8 +63,8 @@ const resolve = (...args) => {
 const ace = (...args) =>
   new Promise((done) => {
     const cwd = resolve()
-    const stdio = 'ignore'
-    //const stdio = 'inherit' // Uncomment to debug ace output
+    // const stdio = 'ignore'
+    const stdio = 'inherit' // Uncomment to debug ace output
     const bin = path.resolve(__dirname, '..', 'bin.js')
     const ps = spawn(bin, args, { stdio, cwd })
     ps.on('exit', done)

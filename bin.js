@@ -6,23 +6,25 @@ const program = require('commander')
 const find = require('find-up')
 const cheerio = require('cheerio')
 
-const wrap = (path) => (args = {}) => {
-  const cmd = require(path)
+const wrap =
+  (path) =>
+  (args = {}) => {
+    const cmd = require(path)
 
-  const getPackage = () => require(find.sync('package.json'))
-  const getPom = () =>
-    cheerio.load(
-      fs.readFileSync(find.sync(['.flattened-pom.xml', 'pom.xml']), {
-        encoding: 'utf8',
-      }),
-      {
-        xmlMode: true,
-        decodeEntities: false,
-      }
-    )
+    const getPackage = () => require(find.sync('package.json'))
+    const getPom = () =>
+      cheerio.load(
+        fs.readFileSync(find.sync(['.flattened-pom.xml', 'pom.xml']), {
+          encoding: 'utf8',
+        }),
+        {
+          xmlMode: true,
+          decodeEntities: false,
+        }
+      )
 
-  cmd({ args, getPackage, getPom })
-}
+    cmd({ args, getPackage, getPom })
+  }
 
 const pkg = require('./package.json')
 
