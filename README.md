@@ -19,7 +19,6 @@ Those technologies include:
 - [react-hot-loader](http://gaearon.github.io/react-hot-loader/)
 - [babel](https://babeljs.io/)
 - [typescript](https://www.typescriptlang.org/)
-- [eslint](https://eslint.org/)
 - [mocha](https://mochajs.org/)
 - [istanbul](https://istanbul.js.org/)
 - [prettier](https://prettier.io/)
