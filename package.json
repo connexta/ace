@@ -26,7 +26,7 @@
     "babel-polyfill": "6.26.0",
     "buffer": "6.0.3",
     "chalk": "2.3.2",
-    "cheerio": "0.22.0",
+    "cheerio": "1.0.0",
     "commander": "2.15.1",
     "console-polyfill": "0.3.0",
     "cross-spawn": "7.0.3",
@@ -43,10 +43,10 @@
     "mocha": "8.4.0",
     "mocha-headless-chrome": "4.0.0",
     "mocha-loader": "5.1.5",
-    "node-polyfill-webpack-plugin": "2.0.1",
+    "node-polyfill-webpack-plugin": "4.0.0",
     "open": "10.1.0",
     "ora": "6.1.2",
-    "postcss": "8.4.47",
+    "postcss": "8.4.49",
     "postcss-loader": "8.1.1",
     "prettier": "2.8.4",
     "process": "0.11.10",
@@ -63,7 +63,7 @@
     "tailwindcss": "3.4.14",
     "ts-loader": "9.5.1",
     "typescript": "5.6.3",
-    "username": "3.0.0",
+    "username": "7.0.0",
     "vkbeautify": "0.99.3",
     "webpack": "5.96.1",
     "webpack-bundle-analyzer": "4.10.2",
@@ -78,6 +78,16 @@
     "react-dom": "^15.1.0 || ^16.0.0 || ^17.0.0 || ^18.0.0"
   },
   "resolutions": {
-    "handle-thing": "2.0.1"
+    "mocha-headless-chrome/puppeteer/ws": "8.17.1",
+    "mocha/chokidar/braces": "3.0.3",
+    "mocha/glob/minimatch": "3.0.5",
+    "mocha/minimatch": "3.0.5",
+    "mocha/nanoid": "3.3.7",
+    "node-polyfill-webpack-plugin/crypto-browserify/browserify-sign": "4.2.2",
+    "node-polyfill-webpack-plugin/crypto-browserify/create-ecdh/elliptic": "6.6.0",
+    "webpack-dev-server/http-proxy-middleware": "2.0.7",
+    "webpack-dev-server/http-proxy-middleware/http-proxy/follow-redirects": "1.14.7",
+    "webpack-dev-server/sockjs/websocket-driver/websocket-extensions": "0.1.4",
+    "webpack-dev-server/sockjs/faye-websocket/websocket-driver/websocket-extensions": "0.1.4"
   }
 }

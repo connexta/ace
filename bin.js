@@ -18,7 +18,7 @@ const wrap =
           encoding: 'utf8',
         }),
         {
-          xmlMode: true,
+          xml: true,
           decodeEntities: false,
         }
       )
