@@ -42,11 +42,6 @@ program
   .action(wrap('./lib/set-env'))
 
 program
-  .command('install')
-  .description('install a jar into ~/.m2')
-  .action(wrap('./lib/install'))
-
-program
   .command('clean')
   .description('remove target directory')
   .option('-w, --workspaces', 'only clean workspaces')
