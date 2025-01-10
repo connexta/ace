@@ -88,16 +88,6 @@ describe('ace', () => {
     equal(await ace('bundle'), 0)
     equal(await isFile(resolve('target', 'webapp', 'index.html')), true)
   }).timeout(60000)
-  it('ace bundle --middleware', async () => {
-    equal(
-      await ace('bundle', '--middleware', 'src/main/webapp/middleware.js'),
-      0
-    )
-    equal(
-      await isFile(resolve('target', 'server', 'bundle.middleware.js')),
-      true
-    )
-  }).timeout(60000)
   it('ace bundle --env=test', async () => {
     equal(await ace('bundle', '--env', 'test'), 0)
     equal(await isFile(resolve('target', 'test', 'index.html')), true)

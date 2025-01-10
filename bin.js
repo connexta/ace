@@ -18,7 +18,7 @@ const wrap =
           encoding: 'utf8',
         }),
         {
-          xmlMode: true,
+          xml: true,
           decodeEntities: false,
         }
       )
@@ -42,11 +42,6 @@ program
   .action(wrap('./lib/set-env'))
 
 program
-  .command('install')
-  .description('install a jar into ~/.m2')
-  .action(wrap('./lib/install'))
-
-program
   .command('clean')
   .description('remove target directory')
   .option('-w, --workspaces', 'only clean workspaces')
@@ -67,12 +62,6 @@ program
     'test timeout in seconds (default: 900 seconds)'
   )
   .action(wrap('./lib/test'))
-
-program
-  .command('lint')
-  .description('run codice linter')
-  .option('-f, --fix', 'fix errors that are found')
-  .action(wrap('./lib/lint'))
 
 program
   .command('format')
@@ -105,10 +94,6 @@ program
   .command('bundle')
   .description('bundle webapp')
   .option(
-    '--middleware <file>',
-    'add express middleware before webpack dev server'
-  )
-  .option(
     '--tsTranspileOnly <tsTranspileOnly>',
     'only transpile typescript (default is false)'
   )
@@ -136,10 +121,6 @@ program
   .option('--contextPath <path>', 'context path to start server on')
   .option('--port <port>', 'dev server port (default: 8080)')
   .option('--host <host>', 'dev server host (default: localhost)')
-  .option(
-    '--middleware <file>',
-    'add express middleware before webpack dev server'
-  )
   .action(wrap('./lib/start'))
 
 program
