@@ -43,7 +43,7 @@
     "node-polyfill-webpack-plugin": "4.1.0",
     "open": "10.1.0",
     "ora": "6.1.2",
-    "postcss": "8.4.49",
+    "postcss": "8.5.1",
     "postcss-loader": "8.1.1",
     "prettier": "2.8.4",
     "process": "0.11.10",
@@ -75,12 +75,5 @@
     "react": "^15.1.0 || ^16.0.0 || ^17.0.0 || ^18.0.0",
     "react-dom": "^15.1.0 || ^16.0.0 || ^17.0.0 || ^18.0.0"
   },
-  "resolutions": {
-    "puppeteer": "23.11.1",
-    "mocha-headless-chrome/puppeteer/ws": "8.17.1",
-    "mocha/chokidar/braces": "3.0.3",
-    "mocha/glob/minimatch": "3.0.5",
-    "mocha/minimatch": "3.0.5",
-    "nanoid": "3.3.8"
-  }
+  "resolutions": {}
 }
