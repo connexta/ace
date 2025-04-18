@@ -85,7 +85,7 @@ program
     'extend an existing feature file',
     (val) => val.split(',')
   )
-  .option('-x, --exclude [projects]', 'exclude existing wabs', (val) =>
+  .option('-x, --exclude [projects]', 'exclude existing resource mappings', (val) =>
     val.split(',')
   )
   .action(wrap('./lib/gen-feature'))
